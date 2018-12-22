@@ -5,9 +5,9 @@ import "./App.css";
 //  Imports for redux
 import { connect } from "react-redux";
 // Import actions
-import { startAction } from "./actions/startAction";
-import { stopAction } from "./actions/stopAction";
-//
+// import { startAction } from "./actions/startAction";
+// import { stopAction } from "./actions/stopAction";
+// new import
 import rotateAction from "./actions/rotateAction";
 
 class App extends Component {
@@ -50,8 +50,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  startAction: () => dispatch(startAction),
-  stopAction: () => dispatch(stopAction),
+  rotateAction: (payload) => dispatch(rotateAction(payload))
 });
 
 export default connect(
