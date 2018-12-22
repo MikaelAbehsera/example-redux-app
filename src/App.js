@@ -7,6 +7,8 @@ import { connect } from "react-redux";
 // Import actions
 import { startAction } from "./actions/startAction";
 import { stopAction } from "./actions/stopAction";
+//
+import rotateAction from "./actions/rotateAction";
 
 class App extends Component {
   render() {
