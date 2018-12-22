@@ -5,8 +5,9 @@ import './App.css';
 //  Imports for redux
 import { connect } from "react-redux";
 // Import actions
-import { startAction } from "actions/startAction";
-import { stopAction } from "actions/stopAction";
+import { startAction } from "./actions/startAction";
+import { stopAction } from "./actions/stopAction";
+
 
 class App extends Component {
   render() {
