@@ -50,7 +50,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  rotateAction: (payload) => dispatch(rotateAction(payload))
+  rotateAction: payload => dispatch(rotateAction(payload))
 });
 
 export default connect(
